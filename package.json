@@ -1,0 +1,27 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node-dev server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvindh93/REST-API-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvindh93/REST-API-blog/issues"
+  },
+  "homepage": "https://github.com/arvindh93/REST-API-blog#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "node-dev": "^3.1.3"
+  }
+}
