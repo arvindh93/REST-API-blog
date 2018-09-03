@@ -6,8 +6,11 @@ validation = (req, res, next) => {
       }
     }
     if (req.method == 'POST' || req.method == 'PUT') {
-      if (!req.name.trim() || !req.url.trim() || !req.text.trim()) {
-        res.sendStatus(400)
+      if (!req.body.name || !req.body.url || !req.body.text) {
+        res.sendStatus(400, "Invalid request body")
+      }
+      if (!req.body.name.trim() || !req.body.url.trim() || !req.body.text.trim()) {
+        res.sendStatus(400, "Properties cannot be empty")
       }
     }
   } else if (req.url.match(/comments/)) {

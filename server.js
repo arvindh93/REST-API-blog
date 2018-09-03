@@ -8,8 +8,8 @@ const validation = require('./validation.js')
 const app = express()
 
 app.use(dataStore)
-app.use(validation)
 app.use(bodyParser.json())
+app.use(validation)
 app.use(logger('dev'))
 
 app.get('/posts', (req, res) => {
